@@ -103,7 +103,7 @@ const RegisterForm = () => {
 					</div>
 				</form>
 			</CardContent>
-			<CardFooter className="flex justify-between">
+			<CardFooter className="flex justify-between mt-8">
 				<Button variant="ct_outline" onClick={handleCancelRegistration}>
 					Cancel
 				</Button>

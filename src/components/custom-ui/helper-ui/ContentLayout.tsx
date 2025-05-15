@@ -7,9 +7,9 @@ interface ContentLayoutProps {
 
 const ContentLayout: React.FC<ContentLayoutProps> = ({ title, children }) => {
 	return (
-		<div>
+		<div className="w-full">
 			<Navbar title={title} />
-			<div className="container pt-8 pb-8 px-4 sm:px-8">{children}</div>
+			<div className="w-full  pt-8 pb-8 px-4 sm:px-8">{children}</div>
 		</div>
 	);
 };
