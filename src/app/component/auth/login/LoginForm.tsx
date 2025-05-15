@@ -27,6 +27,9 @@ const LoginForm = () => {
 	const handleForgetPassword = () => {
 		router.push("/register");
 	};
+	const handleLogin = () => {
+		router.push("/dashboard");
+	};
 	return (
 		<Card className="w-[500px]">
 			<CardHeader>
@@ -76,7 +79,9 @@ const LoginForm = () => {
 				>
 					Forget Your Passowrd ?
 				</CardDescription>
-				<Button className="w-[200px]">Sign In</Button>
+				<Button onClick={handleLogin} className="w-[200px]">
+					Sign In
+				</Button>
 			</CardFooter>
 		</Card>
 	);

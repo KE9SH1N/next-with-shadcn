@@ -14,14 +14,14 @@ const Footer = () => {
 					>
 						shadcn/ui
 					</Link>
-					. The source code is available on{" "}
+					. Developed and design by{" "}
 					<Link
 						href="https://github.com/salimi-my/shadcn-ui-sidebar"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="font-medium underline underline-offset-4"
 					>
-						GitHub
+						Mishel
 					</Link>
 					.
 				</p>

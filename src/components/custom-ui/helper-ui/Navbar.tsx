@@ -1,3 +1,4 @@
+import UserMenu from "@/app/component/common/UserMenu";
 import React from "react";
 import ThemeToggle from "../ThemeToggle";
 import SheetMenu from "./SheetMenu";
@@ -13,9 +14,9 @@ const Navbar: React.FC<NavbarProps> = ({ title }) => {
 					<SheetMenu />
 					<h1 className="font-bold">{title}</h1>
 				</div>
-				<div className="flex flex-1 items-center justify-end">
+				<div className="flex flex-1 items-center justify-end gap-x-3">
+					<UserMenu />
 					<ThemeToggle />
-					{/* <UserNav /> */}
 				</div>
 			</div>
 		</header>

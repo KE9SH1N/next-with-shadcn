@@ -31,6 +31,9 @@ const RegisterForm = () => {
 	const handleCancelRegistration = () => {
 		router.push("/login");
 	};
+	const handleRegistration = () => {
+		router.push("/dashboard");
+	};
 	return (
 		<Card className="w-[500px]">
 			<CardHeader>
@@ -104,7 +107,7 @@ const RegisterForm = () => {
 				<Button variant="ct_outline" onClick={handleCancelRegistration}>
 					Cancel
 				</Button>
-				<Button>Submit</Button>
+				<Button onClick={handleRegistration}>Submit</Button>
 			</CardFooter>
 		</Card>
 	);
