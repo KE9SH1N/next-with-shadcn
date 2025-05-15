@@ -2,6 +2,7 @@ import GBarChart from "@/app/component/common/GBarChart";
 import GCard from "@/app/component/common/GCard";
 import GDotLineChart from "@/app/component/common/GDotLineChart";
 import GRadialChart from "@/app/component/common/GRadialChart";
+import { Test } from "@/app/component/common/Test";
 import ContentLayout from "@/components/custom-ui/helper-ui/ContentLayout";
 
 const page = () => {
@@ -36,6 +37,7 @@ const page = () => {
 						/>
 					</div>
 				</div>
+				<Test />
 			</ContentLayout>
 		</div>
 	);
