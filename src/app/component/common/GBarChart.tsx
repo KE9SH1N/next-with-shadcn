@@ -28,7 +28,7 @@ const chartConfig = {
 const GBarChart = () => {
 	return (
 		<div>
-			<Card className="border-none ">
+			<Card className="border-none shadow-none">
 				<CardContent className="w-full">
 					<ChartContainer config={chartConfig} className="w-full max-h-[140px]">
 						<BarChart accessibilityLayer data={chartData} className="w-full ">

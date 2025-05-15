@@ -26,14 +26,14 @@ const GRadialChart = () => {
 	const totalVisitors = chartData[0].desktop + chartData[0].mobile;
 	return (
 		<div className="w-full">
-			<Card className="flex flex-col border-none">
+			<Card className="flex flex-col border-none shadow-none">
 				<CardContent className="flex flex-1 items-center pb-0">
 					<ChartContainer config={chartConfig} className="w-full max-h-[140px]">
 						<RadialBarChart
 							data={chartData}
 							endAngle={180}
-							innerRadius={50}
-							outerRadius={90}
+							innerRadius={60}
+							outerRadius={80}
 						>
 							<ChartTooltip
 								cursor={false}
