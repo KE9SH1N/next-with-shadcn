@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/card";
 
 interface GCardProps {
+	cardClass?: string;
 	cardPrimaryTitle?: string;
 	cardSecondaryTitle?: string;
 	cardDescription?: string;
@@ -19,6 +20,7 @@ interface GCardProps {
 }
 
 const GCard: React.FC<GCardProps> = ({
+	cardClass,
 	cardPrimaryTitle,
 	cardSecondaryTitle,
 	cardDescription,
@@ -30,7 +32,7 @@ const GCard: React.FC<GCardProps> = ({
 	cardDescriptionClass,
 }) => {
 	return (
-		<Card className="w-full min-h-[280px]">
+		<Card className={`w-full min-h-[280px] ${cardClass}`}>
 			<CardHeader className={`${cardHeaderClass}`}>
 				<CardTitle className={`${cardPrimaryTitleClass}`}>
 					{cardPrimaryTitle}
